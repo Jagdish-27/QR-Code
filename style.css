@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 10% auto;
+    background-color: hsl(212, 45%, 89%);
+    height: 40rem;
+    position: relative;
+    border-radius: 1px;
+    box-shadow: 0px 10px 10px 5px #f1f1f1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffff;
+    border-radius: 15px;
+    /* width: 23%; */
+    width: 300px;
+    padding-bottom: 3%;
+}
+
+.qr_img img{
+    width: 100%;
+    border-radius: 22px;
+    padding: 14px;
+}
+
+.text{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 16px;
+}
+
+.heads{
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-weight: 700;
+}
+.heads h5{
+    font-weight: 700;
+}
+
+.para{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 400;
+    color: rgb(150, 142, 142)
+}
+.para p{
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 420px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+}
